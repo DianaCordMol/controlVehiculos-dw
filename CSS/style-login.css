@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;   
+    border: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background: blue;
+}
+
+.contenedor-login {
+    /* margin: 0 50px 0 auto; */
+    margin: 100px 80px 0 auto;
+    background: white;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+}
+
+.form-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-input {
+    margin: auto;
+}
+
+.input-group {
+    width: 100%;
+    margin: 25px 0;
+}
+
+.ipt, .btn, .img-lg {
+    display: block;
+}
+
+.ipt {
+    font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+    height: 30px;
+    width: 200px;
+    margin-top: 7px;
+    border: none;
+    text-decoration: inherit;
+    border-bottom: 1px solid gray;
+    padding: 5px;
+}
+
+.ipt::placeholder {
+    color: green;
+}
+
+.ipt:focus {
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    padding-bottom: 15px !important;
+    border-bottom: 1px solid #F9944D;
+}
+
+.btn {
+    padding: 10px;
+    font-weight: bolder;
+    border-radius: 20px;
+    width: 200px;
+    background: #F9944D;
+    color: white;
+    margin-top: 30px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    opacity: .85;
+}
+
+.avatar {
+    width: 80px;
+}
+
+
+
