@@ -1,0 +1,97 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.contenedor {
+    width: 100%;
+}
+
+.header {
+    height: 70px;
+    width: 98%;
+    margin: auto;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .titulo {
+    height: 100%;
+    width: 40%;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+.header .titulo h1 a {
+    margin-left: 10px;
+    color: red;
+}
+
+
+.lista-cabecera {
+    height: 100%;
+    width: 60%;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.lista-cabecera li {
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+}
+
+
+
+.lista-cabecera li a {
+    height: 60px;
+    line-height: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.lista-cabecera a:hover i {
+    color: yellow;
+    font-size: 1.4rem;
+}
+
+.lista-cabecera a:hover {
+    font-size: 1.1rem;
+}
+
+.cuerpo {
+    display: flex;
+    width: 100%;
+}
+
+.navprincipal {
+    width: 20%;
+}
+
+
+.contenido {
+    width: 80%;
+    background: red;
+    padding-top: 10px ;
+    padding-left: 20px ;
+}
+
+.breadcrumb {
+
+}
+
+table {
+    width: 95%;
+}
