@@ -6,63 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corautos - Control de vehículos</title>
     <link rel="icon" href="">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/estilos.css">
 </head>
 
 <body>
-    <header>
-        <h1>CORAUTOS</h1>
-        <ul>
-            <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-bell-o" aria-hidden="true"></i></a></li>
-            <li><i class="fa fa-user-circle-o" aria-hidden="true"></i><a href="#">User name</a></li>
-            <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
-        </ul>
-    </header>
-    <nav class="navprincipal">
-        <div class="profile">
-            <ul class="sectionProfile">
-                <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a></li>
-                <li><a href=""><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+    <div class="contenedor">
+
+        <header class="header">
+            <div class="titulo">
+                <h1><a href="#">CORAUTOS</a></h1>
+            </div>
+            <ul class="lista-cabecera">
+                <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-bell-o" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i> User name</a></li>
+                <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
+            </ul>
+        </header>
+
+        <div class="cuerpo">
+
+            <nav class="navprincipal">
+                <div class="profile borde-abajo">
+                    <a href="">
+                        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    </a>
                     <p>User name</p>
-                </li>
-            </ul>
+                </div>
+
+                <div class="sectionVehicless borde-abajo">
+                    <ul class="barra">
+                        <li><a href="vehicle.html"><i class="fa fa-car"></i> Vehículos</a></li>
+                        <li><a href="insuranceVeh.html"><i class="fa fa-heartbeat"></i> Seguros</a>
+                        </li>
+                        <li><a href="revision.html"><i class="fa fa-search"></i> Revisiones</a></li>
+                        <li><a href="maintenance.html"><i class="fa fa-gavel"></i> Mantenimientos</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sectionDrivers">
+                    <ul class="barra">
+                        <li><a href="driver.html"><i class="fa fa-id-card-o"></i> Conductores</a></li>
+                        <li><a href="insuranceDr.html"><i class="fa fa-heartbeat"></i> Seguros</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="contenido">
+
+                <div class="formulario">
+                    <h2>NUEVO CONDUCTOR</h2>
+
+                    <form action="">
+                        <div class="agrupar">
+                            <label for="identificacion">identificación</label>
+                            <input type="number" id="identificacion">
+                        </div>
+                        <div class="agrupar">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre">
+                        </div>
+                        <div class="agrupar">
+                            <label for="edad">Edad</label>
+                            <input type="number" id="edad">
+                        </div>
+                        <div class="agrupar">
+                            <label for="telefono">Teléfono</label>
+                            <input type="number" id="telefono">
+                        </div>
+                        <div class="agrupar">
+                            <label for="direccion">Dirección</label>
+                            <input type="text" id="direccion">
+                        </div>
+                        <div class="agrupar">
+                            <label for="turno">Turno</label>
+                            <select name="" id="turno">
+                                <option value="">Día</option>
+                                <option value="">Noche</option>
+                            </select>
+                        </div>
+                        <div class="agrupar-botones">
+                            <button class="btn btn-azul" type="submit">Guardar</button>
+                            <button  class="btn btn-rojo" type="submit">Cancelar</button>
+                        </div>
+                    </form>
+                </div>
+
+            </main>
         </div>
-        <div class="sectionVehicless">
-            <ul class="listVehicles">
-                <li><a href="vehicle.html"><i class="fa fa-car" aria-hidden="true"></i>VEHÍCULOS</a></li>
-                <li><a href="insuranceVeh.html"><i class="fa fa-heartbeat" aria-hidden="true"></i>Seguros</a></li>
-                <li><a href="revision.html"><i class="fa fa-search" aria-hidden="true"></i>Revisiones</a></li>
-                <li><a href="maintenance.html"><i class="fa fa-gavel" aria-hidden="true"></i>Mantenimientos</a></li>
-            </ul>
-        </div>
-        <div class="sectionDrivers">
-            <ul class="listDrivers">
-                <li><a href="driver.html"><i class="fa fa-id-card-o" aria-hidden="true"></i>CONDUCTORES</a></li>
-                <li><a href="insuranceDr.html"><i class="fa fa-heartbeat" aria-hidden="true"></i></i>Seguros</a></li>
-            </ul>
-        </div>
-    </nav>
-    <main>
-        <h2>NUEVO CONDUCTOR</h2>
-        <form action="">
-            <label for="identificacion">identificación</label>
-            <input type="number" id="identificacion">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre">
-            <label for="edad">Edad</label>
-            <input type="number" id="edad">
-            <label for="telefono">Teléfono</label>
-            <input type="number" id="telefono">
-            <label for="direccion">Dirección</label>
-            <input type="text" id="direccion">
-            <label for="turno">Turno</label>
-            <select name="" id="turno">
-            </select>
-            <button type="submit">Guardar</button>
-            <button type="submit">Cancelar</button>
-        </form>
-    </main>
+    </div>
 </body>
 
 </html>

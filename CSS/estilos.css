@@ -119,9 +119,60 @@
     width: 80%;
     padding-top: 10px;
     padding-left: 20px;
-
 }
 
+.formulario {
+    width: 700px;
+    margin: auto;
+    padding-top: 15px;
+}
+
+.formulario h2 {
+    margin-left: 40px;
+}
+
+.formulario form {
+    margin-top: 15px;
+}
+
+.agrupar {
+    display: flex;
+    padding: 10px;
+}
+
+.agrupar label {
+    width: 20%;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.agrupar input {
+    width: 40%;
+    padding: 5px;
+}
+
+.agrupar select {
+    width: 40%;
+    padding: 5px;
+}   
+
+.agrupar-botones {
+    text-align: center;
+}
+
+.btn {
+    padding: 10px;
+    border: 0px;
+    color: white;
+}
+
+.btn-azul {
+    background: blue;
+}
+
+.btn-rojo {
+    background: red;
+}
 
 .btn-add {
     margin-top: 10px;
