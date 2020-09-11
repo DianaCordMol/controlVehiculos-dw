@@ -149,3 +149,22 @@
 .tabla td {
     padding-left: 6px;
 }
+
+.tabla td a {
+    display: inline-block;
+    color: white;
+    padding: 6px;
+    width: 30px;
+}
+
+.edit {
+    background: green;
+}
+
+.del {
+    background: red;
+}
+
+.acciones {
+    text-align: center;
+}
